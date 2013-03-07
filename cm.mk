@@ -1,5 +1,5 @@
 # Release name
-PRODUCT_RELEASE_NAME := Connect
+PRODUCT_RELEASE_NAME := Connect 4G
 
 # Custom apns must come before cdma.mk is included
 PRODUCT_COPY_FILES += \

@@ -235,6 +235,10 @@ on emmc-fs
     exec /system/bin/e2fsck -y /dev/block/mmcblk0p20
     mount ext4 /dev/block/mmcblk0p20 /drm nosuid nodev barrier=1
 
+    # internal storage
+    mkdir /storage/sdcard1 0777 system system
+    mount vfat /dev/block/mmcblk0p30 /storage/sdcard1 nosuid nodev
+
     mkdir /tombstones 0771 system system
     mount ext4 /dev/block/mmcblk0p22 /tombstones nosuid nodev barrier=1
     mkdir /tombstones/modem 0771 system system
@@ -469,7 +473,7 @@ on property:ro.baseband=svlte2a
    setprop ro.ril.svlte1x true
 
 on property:dev.bootcomplete=1
-	exec /system/bin/sh /system/etc/init.qcom.baseband.sh
+    exec /system/bin/sh /system/etc/init.qcom.baseband.sh
 
 service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
     class main
@@ -618,6 +622,9 @@ service p2p_supplicant /system/bin/wpa_supplicant \
     socket wpa_wlan0 dgram 660 wifi wifi
     disabled
     oneshot
+
+on property:dev.bootcomplete=1
+    exec /system/bin/hwaddrs
 
 service ami304d /system/bin/ami304d
     class main
