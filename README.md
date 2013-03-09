@@ -1,5 +1,5 @@
-Work in progress for the LG Connect 4G. Repo's based off the i_vzw and iproj projects for the LG Spectrum 4G
---------------------------
+**Work in progress for the LG Connect 4G. Repo's based off the i_vzw and iproj projects for the LG Spectrum 4G
+
 
 HOW-TO BUILD:
 =============
