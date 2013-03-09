@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
 ** Licensed under the Apache License, Version 2.0 (the "License");
@@ -33,28 +34,28 @@
          <EriInfo RoamingIndicator="0"
                   IconIndex="0"
                   IconMode="0"
-                  EriText=""
+                  EriText="MetroPCS"
                   CallPromptId="0"
                   AlertId="0"/>
 
          <EriInfo RoamingIndicator="1"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Verizon Wireless"
+                  EriText="MetroPCS"
                   CallPromptId="0"
                   AlertId="0"/>
 
          <EriInfo RoamingIndicator="2"
                   IconIndex="2"
                   IconMode="1"
-                  EriText=""
+                  EriText="MetroPCS"
                   CallPromptId="0"
                   AlertId="0"/>
 
          <EriInfo RoamingIndicator="64"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Verizon Wireless"
+                  EriText="MetroPCS"
                   CallPromptId="0"
                   AlertId="0"/>
 
@@ -138,14 +139,14 @@
          <EriInfo RoamingIndicator="76"
                   IconIndex="76"
                   IconMode="0"
-                  EriText="Verizon Wireless"
+                  EriText="MetroPCS"
                   CallPromptId="0"
                   AlertId="0"/>
 
          <EriInfo RoamingIndicator="77"
                   IconIndex="2"
                   IconMode="1"
-                  EriText="Verizon Wireless"
+                  EriText="MetroPCS"
                   CallPromptId="0"
                   AlertId="0"/>
 

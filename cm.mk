@@ -2,8 +2,8 @@
 PRODUCT_RELEASE_NAME := Connect 4G
 
 # Custom apns must come before cdma.mk is included
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
+#PRODUCT_COPY_FILES += \
+#	$(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
 
 ## Specify phone tech before including full_phone
 $(call inherit-product, vendor/cm/config/cdma.mk)

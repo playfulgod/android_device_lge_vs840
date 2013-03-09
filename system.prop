@@ -39,10 +39,10 @@ persist.radio.no_wait_for_card=1
 ro.cdma.voicemail.number=mine
 
 ro.com.google.clientidbase=android-lge
-ro.com.google.clientidbase.ms=android-metrppcs
+ro.com.google.clientidbase.ms=android-metropcs-us
 ro.com.google.clientidbase.gmm=android-lge
-ro.com.google.clientidbase.yt=android-metropcs
-ro.com.google.clientidbase.am=android-metropcs
+ro.com.google.clientidbase.yt=android-lge
+ro.com.google.clientidbase.am=android-lge
 ro.cdma.home.operator.alpha=MetroPCS
 ro.cdma.home.operator.numeric=311660
 

@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+	$(LOCAL_PATH)/recovery/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
 
 # Sim ToolKit
 PRODUCT_PACKAGES += \
