@@ -1,6 +1,6 @@
 include vendor/lge/cayman/BoardConfigVendor.mk
 
-# Partitions (XXX: check these)
+# Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
@@ -8,15 +8,11 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 422576128
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
 # Kernel
-BOARD_USE_PREBUILT_KERNEL := false
+TARGET_PREBUILT_KERNEL := device/lge/cayman/kernel
 
-ifeq ($(BOARD_USE_PREBUILT_KERNEL),true)
-TARGET_PREBUILT_KERNEL_DIR := device/lge/cayman/kernels/c
-else
 # Build kernel from source
 TARGET_KERNEL_SOURCE := kernel/lge/iproj
 TARGET_KERNEL_CONFIG := connect_defconfig 
-endif
 
 BOARD_KERNEL_CMDLINE := console=ttyDCC0,115200,n8 androidboot.hardware=iproj
 BOARD_KERNEL_PAGESIZE := 2048
@@ -27,7 +23,7 @@ include device/lge/iproj/BoardConfig.mk
 
 BOARD_CDMA_NETWORK := true
 
-# Device Assert.. ics, cwm, gb
+# Device Assert
 TARGET_OTA_ASSERT_DEVICE := i_vzw,ms840,MS840,cayman
 
 # Recovery

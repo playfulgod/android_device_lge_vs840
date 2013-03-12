@@ -1,6 +1,7 @@
 lib/hw/sensors.msm8660.so
 etc/firmware/vidc_1080p.fw
 etc/firmware/BCM4330B14.hcd
+etc/wifi/bcmdhd.cal
 lib/egl/libq3dtools_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libGLESv1_CM_adreno200.so
@@ -27,9 +28,12 @@ bin/rild
 bin/qcks
 bin/ks
 bin/time_daemon
+
+## Ril Files
 lib/libril-qc-qmi-1.so
 lib/libril-qcril-hook-oem.so
 lib/libril.so
+lib/libreference-ril.so
 lib/libqdi.so
 lib/libqmi.so
 lib/libdiag.so
