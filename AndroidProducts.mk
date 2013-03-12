@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/full_cayman.mk
+	$(LOCAL_DIR)/full_vs840.mk

@@ -1,4 +1,4 @@
-$(call inherit-product-if-exists, vendor/lge/cayman/cayman-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/vs840/vs840-vendor.mk)
 
 include device/lge/iproj/device.mk
 
@@ -23,11 +23,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	Stk
 
-#### Goo Manager support
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.goo.developerid=playfulgod \
-	ro.goo.rom=CM10Connect \
-	ro.goo.version=$(shell date +%Y%m%d )
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/app/com.s0up.goomanager-1.apk:system/app/com.s0up.goomanager-1.apk

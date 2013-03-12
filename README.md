@@ -1,4 +1,4 @@
-**Work in progress for the LG Connect 4G. Repo's based off the i_vzw and iproj projects for the LG Spectrum 4G**
+**Work in progress for the LG Lucid 4G. Repo's based off the i_vzw and iproj projects for the LG Spectrum 4G**
 
 
 HOW-TO BUILD:
@@ -33,7 +33,7 @@ Now initialized the repository and pull the source (with my repos attached):
 
 Depending on your connection, this might take awhile.
 
-Getting my repos for the LG Connect (cayman)
+Getting my repos for the LG Lucid (vs840)
 	
 	$ cd ~/android/system/device/
 
@@ -41,7 +41,7 @@ Getting my repos for the LG Connect (cayman)
 
 	$ cd lge
 
-	$ git clone https://github.com/playfulgod/android_device_lge_cayman.git cayman
+	$ git clone https://github.com/playfulgod/android_device_lge_vs840.git vs840
 
 Then cd to the kernel directory:
 
@@ -49,7 +49,7 @@ Then cd to the kernel directory:
 
 	$ mkdir lge
 
-	$ git clone https://github.com/playfulgod/lge-kernel-iproj cayman
+	$ git clone https://github.com/playfulgod/lge-kernel-iproj iproj
 
 Extract necessary binaries and proprietary files 
 ------------------------------------------------
@@ -58,7 +58,7 @@ We will need to reuse some proprietary files from the stock ROM:
 
     $ cd
     
-    $ cd ~/android/system/device/lge/cayman
+    $ cd ~/android/system/device/lge/vs840
     
     $ ./extract-files.sh
 
@@ -78,14 +78,14 @@ Now, we build (system being your work directory):
 
     $ cd ~/android/system
 
-To build for the LG Connect 4G:
+To build for the LG Lucid 4G:
     
-    $ . build/envsetup.sh && brunch cayman
+    $ . build/envsetup.sh && brunch vs840
 
 
 Installing CM10
 ---------------
-If the build was successful, you can now take the update zip found in out/target/product/cayman/ and flash using a custom recovery. Make sure to grab the latest Gapps to complete the experience.
+If the build was successful, you can now take the update zip found in out/target/product/vs840/ and flash using a custom recovery. Make sure to grab the latest Gapps to complete the experience.
 
 When you want to rebuild with new changes to the BoardConfig.mk or after syncing to the latest CM src make sure to do the following before you recompile.
 

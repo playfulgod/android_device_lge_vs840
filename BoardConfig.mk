@@ -1,4 +1,4 @@
-include vendor/lge/cayman/BoardConfigVendor.mk
+include vendor/lge/vs840/BoardConfigVendor.mk
 
 # Partitions
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -8,11 +8,11 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 422576128
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/lge/cayman/kernel
+TARGET_PREBUILT_KERNEL := device/lge/vs840/kernel
 
 # Build kernel from source
 TARGET_KERNEL_SOURCE := kernel/lge/iproj
-TARGET_KERNEL_CONFIG := connect_defconfig 
+TARGET_KERNEL_CONFIG := lucid_defconfig 
 
 BOARD_KERNEL_CMDLINE := console=ttyDCC0,115200,n8 androidboot.hardware=iproj
 BOARD_KERNEL_PAGESIZE := 2048
@@ -24,7 +24,7 @@ include device/lge/iproj/BoardConfig.mk
 BOARD_CDMA_NETWORK := true
 
 # Device Assert
-TARGET_OTA_ASSERT_DEVICE := i_vzw,ms840,MS840,cayman
+TARGET_OTA_ASSERT_DEVICE := i_vzw,vs840,VS840,cayman
 
 # Recovery
-#BOARD_CUSTOM_GRAPHICS := ../../../device/lge/cayman/recovery/graphics.c
+#BOARD_CUSTOM_GRAPHICS := ../../../device/lge/vs840/recovery/graphics.c

@@ -1,5 +1,5 @@
 # Release name
-PRODUCT_RELEASE_NAME := Connect 4G
+PRODUCT_RELEASE_NAME := Lucid 4G
 
 # Custom apns must come before cdma.mk is included
 #PRODUCT_COPY_FILES += \
@@ -14,12 +14,12 @@ TARGET_BOOTANIMATION_NAME := vertical-480x800
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lge/cayman/full_cayman.mk)
+$(call inherit-product, device/lge/vs840/full_vs840.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cayman
-PRODUCT_NAME := cm_cayman
-PRODUCT_BRAND := MetroPCS
-PRODUCT_MODEL := MS840 4G
+PRODUCT_DEVICE := vs840
+PRODUCT_NAME := cm_vs840
+PRODUCT_BRAND := Verizon
+PRODUCT_MODEL := VS840 4G
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_CHARACTERISTICS := phone
